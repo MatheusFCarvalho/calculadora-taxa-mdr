@@ -19,7 +19,7 @@ export const Container = styled.div`
   h2 {
     font-weight: bold;
   }
-  strong {
+  b {
     font-weight: bold;
   }
   .sublinhado{
