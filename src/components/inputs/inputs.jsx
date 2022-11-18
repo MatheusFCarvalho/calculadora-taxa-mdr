@@ -1,4 +1,5 @@
 import { makeRequest } from '../../utils/axios';
+import { InputNumber } from '../inputNumber/inputNumber';
 import { Container } from './styles';
 
 
@@ -23,22 +24,9 @@ function Inputs({ setResults }) {
     return (
         <Container onChange={handleSubmit}>
             <h1>Simule sua Antecipação</h1>
-            <div>
-                <p>Informe o valor da venda *</p>
-                <div className='input-money'>
-                    <p>R$</p>
-                    <input className='amountInput' type='number' />
-                </div>
-            </div>
-            <div>
-                <p>Em quantas parcelas *</p>
-                <input className='installmentsInput' type='number' max={12} min={0} />
-                <span>Máxima de 12 parcelas</span>
-            </div>
-            <div>
-                <p>Informe o percentual de MDR *</p>
-                <input className='mdrInput' type='number' />
-            </div>
+            <InputNumber title='Informe o valor da venda *' label='amountInput' money={true} />
+            <InputNumber title='Quantas parcelas *' label='installmentsInput' span='Máxima de 12 parcelas' />
+            <InputNumber title='Informe o percentual de MDR *' label='mdrInput' />
         </Container>
     )
 }
