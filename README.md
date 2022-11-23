@@ -15,3 +15,5 @@ Instruções para ver o projeto em sua máquina:
 3. No terminal utilizar o comando 'yarn install' (Aguardar a instalação dos pacotes)
 4. Utilizar o comando 'yarn start'
 Pronto ele irá abrir em seu navegador padrão!
+
+Esta aplicação não possui testes.
